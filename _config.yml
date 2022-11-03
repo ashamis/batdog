@@ -1,5 +1,5 @@
 # Base configs
-baseurl: "https://batdog.shamis.au"
+baseurl: "https://ashamis.github.io/batdog"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: "UA-46465113-2"
