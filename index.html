@@ -44,7 +44,6 @@ layout: default
             {% endif %}
           {% endfor %}
         shuffle(js_array)
-        console.log(js_array);
 
         for (let i = 0; i < Math.min(50, js_array.length); i++) { 
           text = 
@@ -54,6 +53,7 @@ layout: default
                   data-name="foobar" /></a> \
             </article>';
           text = text.replace("foobar", js_array[i]);
+          console.log(text);
           document.getElementById("imgs").innerHTML += text;
         }
 
