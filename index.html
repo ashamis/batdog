@@ -21,7 +21,7 @@ layout: default
         let js_array =[];
           {% for image in site.static_files %}
             {% if image.path contains 'fulls' %}
-                js_array.push({{image.name}});
+                js_array.push('{{image.name}}');
             {% endif %}
           {% endfor %}
         console.log(js_array);
