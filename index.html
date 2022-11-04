@@ -52,7 +52,7 @@ layout: default
                 <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/foobar" alt="" \
                   data-name="foobar" /></a> \
             </article>';
-          text = text.replace("foobar", js_array[i]);
+          text = text.replaceAll("foobar", js_array[i]);
           console.log(text);
           document.getElementById("imgs").innerHTML += text;
         }
