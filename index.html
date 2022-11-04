@@ -49,9 +49,9 @@ layout: default
         for (let i = 0; i < Math.min(50, js_array.length); i++) { 
           text = 
             '<article class="thumb"> \
-              <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ foobar }}" class="image"> \
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ foobar }}" alt="" \
-                  data-name="{{ foobar }}" /></a> \
+              <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/foobar" class="image"> \
+                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/foobar" alt="" \
+                  data-name="foobar" /></a> \
             </article>';
           text = text.replace("foobar", js_array[i]);
           document.getElementById("imgs").innerHTML += text;
