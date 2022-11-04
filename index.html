@@ -18,13 +18,33 @@ layout: default
     <!-- Main -->
     <div id="main">
       <script>
+        function shuffle(array) {
+          let currentIndex = array.length, randomIndex;
+
+          // While there remain elements to shuffle.
+          while (currentIndex != 0) {
+
+            // Pick a remaining element.
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+
+            // And swap it with the current element.
+            [array[currentIndex], array[randomIndex]] = [
+              array[randomIndex], array[currentIndex]];
+          }
+
+          return array;
+        }
+
         let js_array =[];
           {% for image in site.static_files %}
             {% if image.path contains 'fulls' %}
                 js_array.push('{{image.name}}');
             {% endif %}
           {% endfor %}
+        shuffle(js_array)
         console.log(js_array);
+
         </script>
     </div>
 
