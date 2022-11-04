@@ -1,18 +1,18 @@
 # Base configs
-baseurl: "https://ashamis.github.io/batdog"
+baseurl: "https://batdog.shamis.au"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: "UA-46465113-2"
 
 # UI configs
 title: "In memory of Batdog 2014 - 2022"
-subtitle: "You were taken from us too soon"
+subtitle: "You were taken from us too soon."
 author: "Alex"
 header:
  title: "Batdog"
  subtitle: "Beloved poodle"
 footer:
  name: "Batdog 2014 - 2022"
- bio: "In memory of our beloved poodle Batdog. You were taken from us too soon"
+ bio: "In memory of our beloved poodle Batdog. You were taken from us too soon."
  github: ""
 web_design: "AJ"
