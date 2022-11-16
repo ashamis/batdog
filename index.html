@@ -60,6 +60,17 @@ layout: default
         window.onscroll = function (ev) {
           if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             alert("you're at the bottom of the page");
+            for (let i = 0; i < Math.min(51, js_array.length); i++) {
+              text =
+                '<article class="thumb"> \
+                  <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/foobar" class="image"> \
+                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/foobar" alt="" \
+                      data-name="foobar" /></a> \
+                  </article>';
+            text = text.replaceAll("foobar", js_array[i]);
+            console.log(text);
+            document.getElementById("main").innerHTML += text;
+        }
           }
         };
         </script>
