@@ -57,7 +57,7 @@ layout: default
           // console.log(text);
           document.getElementById("main").innerHTML += text;
         }
-        let max_seen = document.body.offsetHeight
+        let max_seen = 100
 
         window.onscroll = function (ev) {
           if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && (window.innerHeight + window.scrollY) >= max_seen + 200) {
