@@ -55,6 +55,12 @@ layout: default
           text = text.replaceAll("foobar", js_array[i]);
           console.log(text);
           document.getElementById("main").innerHTML += text;
+
+          $(window).scroll(function () {
+            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+              alert("bottom!");
+            }
+          });
         }
 
         </script>
