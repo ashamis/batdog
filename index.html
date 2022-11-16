@@ -57,10 +57,12 @@ layout: default
           // console.log(text);
           document.getElementById("main").innerHTML += text;
         }
+        let max_seen = document.body.offsetHeight
 
         window.onscroll = function (ev) {
-          if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && (window.innerHeight + window.scrollY) >= max_seen + 200) {
           console.log(window.innerHeight + window.scrollY);
+          let max_seen = window.innerHeight + window.scrollY
             for (let i = upto; i < Math.min(upto + 51, js_array.length); i++) {
               text =
                 '<article class="thumb"> \
