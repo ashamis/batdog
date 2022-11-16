@@ -59,8 +59,8 @@ layout: default
         }
 
         window.onscroll = function (ev) {
-          console.log(window.innerHeight + window.scrollY);
           if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          console.log(window.innerHeight + window.scrollY);
             for (let i = upto; i < Math.min(upto + 51, js_array.length); i++) {
               text =
                 '<article class="thumb"> \
