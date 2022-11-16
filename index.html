@@ -44,6 +44,7 @@ layout: default
             {% endif %}
           {% endfor %}
         shuffle(js_array)
+        let upto = 51
 
         for (let i = 0; i < Math.min(51, js_array.length); i++) { 
           text = 
@@ -59,8 +60,7 @@ layout: default
 
         window.onscroll = function (ev) {
           if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-            alert("you're at the bottom of the page");
-            for (let i = 0; i < Math.min(51, js_array.length); i++) {
+            for (let i = upto; i < Math.min(upto + 51, js_array.length); i++) {
               text =
                 '<article class="thumb"> \
                   <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/foobar" class="image"> \
@@ -70,6 +70,7 @@ layout: default
             text = text.replaceAll("foobar", js_array[i]);
             console.log(text);
             document.getElementById("main").innerHTML += text;
+            upto += 51;
         }
           }
         };
