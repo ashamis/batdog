@@ -62,7 +62,6 @@ layout: default
         window.onscroll = function (ev) {
           if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && (window.innerHeight + window.scrollY) >= max_seen + 200) {
             console.log(window.innerHeight + window.scrollY);
-            console.log(max_seen);
             let max_seen = window.innerHeight + window.scrollY
               for (let i = upto; i < Math.min(upto + 51, js_array.length); i++) {
                 text =
