@@ -59,9 +59,9 @@ layout: default
         let max_seen = 0;
 
         window.onscroll = function (ev) {
-            console.log(window.innerHeight + window.scrollY);
-            console.log(document.body.offsetHeight);
-          if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && (window.innerHeight + window.scrollY) >= max_seen) {
+          console.log(window.innerHeight + window.scrollY);
+          console.log(document.body.offsetHeight - 1);
+          if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 1) && (window.innerHeight + window.scrollY) >= max_seen) {
             console.log(window.innerHeight + window.scrollY);
             max_seen = window.innerHeight + window.scrollY;
               for (let i = upto; i < Math.min(upto + 51, js_array.length); i++) {
